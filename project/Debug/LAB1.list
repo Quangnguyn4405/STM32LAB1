@@ -581,23 +581,23 @@ int main(void)
 	  			  digit = 5;
  800056e:	2305      	movs	r3, #5
  8000570:	60fb      	str	r3, [r7, #12]
-	  			  HAL_GPIO_WritePin(LED_RED_A_GPIO_Port, LED_RED_A_Pin, GPIO_PIN_SET);
- 8000572:	2201      	movs	r2, #1
+	  			  HAL_GPIO_WritePin(LED_RED_A_GPIO_Port, LED_RED_A_Pin, GPIO_PIN_RESET);
+ 8000572:	2200      	movs	r2, #0
  8000574:	2102      	movs	r1, #2
  8000576:	482d      	ldr	r0, [pc, #180]	; (800062c <main+0xf0>)
  8000578:	f000 fc3a 	bl	8000df0 <HAL_GPIO_WritePin>
-	  			  HAL_GPIO_WritePin(LED_RED_B_GPIO_Port, LED_RED_B_Pin, GPIO_PIN_RESET);
- 800057c:	2200      	movs	r2, #0
+	  			  HAL_GPIO_WritePin(LED_RED_B_GPIO_Port, LED_RED_B_Pin, GPIO_PIN_SET);
+ 800057c:	2201      	movs	r2, #1
  800057e:	2110      	movs	r1, #16
  8000580:	482a      	ldr	r0, [pc, #168]	; (800062c <main+0xf0>)
  8000582:	f000 fc35 	bl	8000df0 <HAL_GPIO_WritePin>
-	  			  HAL_GPIO_WritePin(LED_YELLOW_A_GPIO_Port, LED_YELLOW_A_Pin, GPIO_PIN_RESET);
- 8000586:	2200      	movs	r2, #0
+	  			  HAL_GPIO_WritePin(LED_YELLOW_A_GPIO_Port, LED_YELLOW_A_Pin, GPIO_PIN_SET);
+ 8000586:	2201      	movs	r2, #1
  8000588:	2108      	movs	r1, #8
  800058a:	4828      	ldr	r0, [pc, #160]	; (800062c <main+0xf0>)
  800058c:	f000 fc30 	bl	8000df0 <HAL_GPIO_WritePin>
-	  			  HAL_GPIO_WritePin(LED_GREEN_B_GPIO_Port, LED_GREEN_B_Pin, GPIO_PIN_SET);
- 8000590:	2201      	movs	r2, #1
+	  			  HAL_GPIO_WritePin(LED_GREEN_B_GPIO_Port, LED_GREEN_B_Pin, GPIO_PIN_RESET);
+ 8000590:	2200      	movs	r2, #0
  8000592:	2120      	movs	r1, #32
  8000594:	4825      	ldr	r0, [pc, #148]	; (800062c <main+0xf0>)
  8000596:	f000 fc2b 	bl	8000df0 <HAL_GPIO_WritePin>
@@ -606,13 +606,13 @@ int main(void)
  800059a:	68bb      	ldr	r3, [r7, #8]
  800059c:	2b03      	cmp	r3, #3
  800059e:	d109      	bne.n	80005b4 <main+0x78>
-	  			  HAL_GPIO_WritePin(LED_GREEN_B_GPIO_Port, LED_GREEN_B_Pin, GPIO_PIN_RESET);
- 80005a0:	2200      	movs	r2, #0
+	  			  HAL_GPIO_WritePin(LED_GREEN_B_GPIO_Port, LED_GREEN_B_Pin, GPIO_PIN_SET);
+ 80005a0:	2201      	movs	r2, #1
  80005a2:	2120      	movs	r1, #32
  80005a4:	4821      	ldr	r0, [pc, #132]	; (800062c <main+0xf0>)
  80005a6:	f000 fc23 	bl	8000df0 <HAL_GPIO_WritePin>
-	  			  HAL_GPIO_WritePin(LED_YELLOW_B_GPIO_Port, LED_YELLOW_B_Pin, GPIO_PIN_SET);
- 80005aa:	2201      	movs	r2, #1
+	  			  HAL_GPIO_WritePin(LED_YELLOW_B_GPIO_Port, LED_YELLOW_B_Pin, GPIO_PIN_RESET);
+ 80005aa:	2200      	movs	r2, #0
  80005ac:	2140      	movs	r1, #64	; 0x40
  80005ae:	481f      	ldr	r0, [pc, #124]	; (800062c <main+0xf0>)
  80005b0:	f000 fc1e 	bl	8000df0 <HAL_GPIO_WritePin>
@@ -624,23 +624,23 @@ int main(void)
 	  			  digit = 3;
  80005ba:	2303      	movs	r3, #3
  80005bc:	60fb      	str	r3, [r7, #12]
-	  			  HAL_GPIO_WritePin(LED_RED_B_GPIO_Port, LED_RED_B_Pin, GPIO_PIN_SET);
- 80005be:	2201      	movs	r2, #1
+	  			  HAL_GPIO_WritePin(LED_RED_B_GPIO_Port, LED_RED_B_Pin, GPIO_PIN_RESET);
+ 80005be:	2200      	movs	r2, #0
  80005c0:	2110      	movs	r1, #16
  80005c2:	481a      	ldr	r0, [pc, #104]	; (800062c <main+0xf0>)
  80005c4:	f000 fc14 	bl	8000df0 <HAL_GPIO_WritePin>
-	  			  HAL_GPIO_WritePin(LED_RED_A_GPIO_Port, LED_RED_A_Pin, GPIO_PIN_RESET);
- 80005c8:	2200      	movs	r2, #0
+	  			  HAL_GPIO_WritePin(LED_RED_A_GPIO_Port, LED_RED_A_Pin, GPIO_PIN_SET);
+ 80005c8:	2201      	movs	r2, #1
  80005ca:	2102      	movs	r1, #2
  80005cc:	4817      	ldr	r0, [pc, #92]	; (800062c <main+0xf0>)
  80005ce:	f000 fc0f 	bl	8000df0 <HAL_GPIO_WritePin>
-	  			  HAL_GPIO_WritePin(LED_YELLOW_B_GPIO_Port, LED_YELLOW_B_Pin, GPIO_PIN_RESET);
- 80005d2:	2200      	movs	r2, #0
+	  			  HAL_GPIO_WritePin(LED_YELLOW_B_GPIO_Port, LED_YELLOW_B_Pin, GPIO_PIN_SET);
+ 80005d2:	2201      	movs	r2, #1
  80005d4:	2140      	movs	r1, #64	; 0x40
  80005d6:	4815      	ldr	r0, [pc, #84]	; (800062c <main+0xf0>)
  80005d8:	f000 fc0a 	bl	8000df0 <HAL_GPIO_WritePin>
-	  			  HAL_GPIO_WritePin(LED_GREEN_A_GPIO_Port, LED_GREEN_A_Pin, GPIO_PIN_SET);
- 80005dc:	2201      	movs	r2, #1
+	  			  HAL_GPIO_WritePin(LED_GREEN_A_GPIO_Port, LED_GREEN_A_Pin, GPIO_PIN_RESET);
+ 80005dc:	2200      	movs	r2, #0
  80005de:	2104      	movs	r1, #4
  80005e0:	4812      	ldr	r0, [pc, #72]	; (800062c <main+0xf0>)
  80005e2:	f000 fc05 	bl	8000df0 <HAL_GPIO_WritePin>
@@ -652,13 +652,13 @@ int main(void)
 	  			  digit = 2;
  80005ec:	2302      	movs	r3, #2
  80005ee:	60fb      	str	r3, [r7, #12]
-	  			  HAL_GPIO_WritePin(LED_GREEN_A_GPIO_Port, LED_GREEN_A_Pin, GPIO_PIN_RESET);
- 80005f0:	2200      	movs	r2, #0
+	  			  HAL_GPIO_WritePin(LED_GREEN_A_GPIO_Port, LED_GREEN_A_Pin, GPIO_PIN_SET);
+ 80005f0:	2201      	movs	r2, #1
  80005f2:	2104      	movs	r1, #4
  80005f4:	480d      	ldr	r0, [pc, #52]	; (800062c <main+0xf0>)
  80005f6:	f000 fbfb 	bl	8000df0 <HAL_GPIO_WritePin>
-	  			  HAL_GPIO_WritePin(LED_YELLOW_A_GPIO_Port, LED_YELLOW_A_Pin, GPIO_PIN_SET);
- 80005fa:	2201      	movs	r2, #1
+	  			  HAL_GPIO_WritePin(LED_YELLOW_A_GPIO_Port, LED_YELLOW_A_Pin, GPIO_PIN_RESET);
+ 80005fa:	2200      	movs	r2, #0
  80005fc:	2108      	movs	r1, #8
  80005fe:	480b      	ldr	r0, [pc, #44]	; (800062c <main+0xf0>)
  8000600:	f000 fbf6 	bl	8000df0 <HAL_GPIO_WritePin>
