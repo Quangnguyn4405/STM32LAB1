@@ -108,7 +108,7 @@ int main(void)
  8000158:	f000 f846 	bl	80001e8 <MX_GPIO_Init>
   /* USER CODE BEGIN 2 */
   HAL_GPIO_WritePin(GPIOA,
- 800015c:	2201      	movs	r2, #1
+ 800015c:	2200      	movs	r2, #0
  800015e:	f64f 71f0 	movw	r1, #65520	; 0xfff0
  8000162:	4802      	ldr	r0, [pc, #8]	; (800016c <main+0x20>)
  8000164:	f000 fbc0 	bl	80008e8 <HAL_GPIO_WritePin>
