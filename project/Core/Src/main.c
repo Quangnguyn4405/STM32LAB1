@@ -126,7 +126,7 @@ int main(void)
       setNumberOnClock(minute);
       setNumberOnClock(second);
 
-      HAL_Delay(500);
+      HAL_Delay(1000);
 
       second++;
       if (second >= 12) {

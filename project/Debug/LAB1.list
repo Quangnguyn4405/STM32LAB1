@@ -201,8 +201,8 @@ int main(void)
  80001e2:	6878      	ldr	r0, [r7, #4]
  80001e4:	f7ff ffbe 	bl	8000164 <setNumberOnClock>
 
-      HAL_Delay(500);
- 80001e8:	f44f 70fa 	mov.w	r0, #500	; 0x1f4
+      HAL_Delay(1000);
+ 80001e8:	f44f 707a 	mov.w	r0, #1000	; 0x3e8
  80001ec:	f000 f976 	bl	80004dc <HAL_Delay>
 
       second++;
