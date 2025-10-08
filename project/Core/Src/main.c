@@ -292,7 +292,7 @@ static void MX_GPIO_Init(void)
   HAL_GPIO_WritePin(GPIOA, LED_RED_A_Pin|LED_GREEN_A_Pin|LED_YELLOW_A_Pin|LED_RED_B_Pin
                           |LED_GREEN_B_Pin|LED_YELLOW_B_Pin|seg_a_Pin|seg_b_Pin
                           |seg_c_Pin|seg_d_Pin|seg_e_Pin|seg_f_Pin
-                          |seg_g_Pin, GPIO_PIN_SET);
+                          |seg_g_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pins : LED_RED_A_Pin LED_GREEN_A_Pin LED_YELLOW_A_Pin LED_RED_B_Pin
                            LED_GREEN_B_Pin LED_YELLOW_B_Pin seg_a_Pin seg_b_Pin
